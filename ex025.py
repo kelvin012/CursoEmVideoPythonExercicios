@@ -1,6 +1,3 @@
-cidade = input('Digite o nome da sua cidade: ')
-
-if (cidade[0:5] == 'SANTO'):
-    print('Sua cidade tem como palavra inicial SANTO')
-else:
-    print('Sua cidade nao começa com a palavra SANTO')
+nome = str(input('Digite seu nome completo! ')).strip()
+nome = nome.upper().split()
+print('Seu nome tem SILVA ? {}'.format('SILVA' in nome))
