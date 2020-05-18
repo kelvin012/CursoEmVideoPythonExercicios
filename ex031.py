@@ -1,4 +1,4 @@
-distancia = float(input('Digite a distancia em KM da sua viagem: '))
+distancia = float(input('Digite a distancia em Km da sua viagem: '))
 if distancia <= 200:
     valor = distancia * 0.50
     print('O valor da sua viagem foi de R${:.2f}'.format(valor))

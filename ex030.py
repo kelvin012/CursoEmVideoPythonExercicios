@@ -1,5 +1,5 @@
-number = float(input('Digite um número: '))
+number = int(input('Digite um número: '))
 if number % 2 == 0:
-    print('O número {} se encaixa na descrição de número PAR'.format(number))
+    print('O número {} se trata de um número PAR'.format(number))
 else:
-    print('O número {} se encaixa na descrição de número ÍMPAR'.format(number))
+    print('O número {} se trata de um número ÍMPAR'.format(number))
