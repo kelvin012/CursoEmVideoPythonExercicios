@@ -10,7 +10,7 @@ categoria = ''
 if (l1 + l2 > l3 and l2 + l3 > l1 and l1 + l3 > l2):
     if l1 == l2 and l1 == l3:
         categoria = 'Equilátero'
-    elif l1 == l2 or l1 == l2 or l2 == l3:
+    elif l1 == l2 or l1 == l3 or l2 == l3:
         categoria = 'Isósceles'
     else:
         categoria = 'Escaleno'

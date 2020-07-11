@@ -4,12 +4,12 @@ imc = peso / (altura * altura)
 situação = ''
 if imc < 18.5:
     situação = 'Abaixo do peso'
-elif imc >= 18.5 and imc <= 25:
+elif imc >= 18.5 and imc < 25:
     situação = 'Peso Ideal'
-elif imc > 25 and imc <= 30:
+elif imc >= 25 and imc < 30:
     situação = 'Sobrepeso'
-elif imc > 30 and imc <= 40:
+elif imc >= 30 and imc < 40:
     situação = 'Obesidade'
 else:
     situação = 'Obesidade Mórbida'
-print('O seu IMC atual equivale a : {:.2f} a sua situação no momento é {}'.format(imc, situação))
+print('O seu IMC atual equivale a : {:.1f} a sua situação no momento é {}'.format(imc, situação))
