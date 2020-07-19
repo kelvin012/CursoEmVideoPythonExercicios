@@ -1,6 +1,4 @@
-tabuada = int(input('Digite um número: '))
+tabuada = int(input('Digite um número parra ver a tabuada: '))
 
-j = 0
-for i in range(0, 10):
-    print('{} X {} = {}'.format(tabuada, j, tabuada * (i + 1)))
-    j += 1
+for j in range(1, 11):
+    print('{} X {} = {}'.format(tabuada, j, tabuada * j))

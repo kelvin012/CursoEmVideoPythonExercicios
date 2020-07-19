@@ -1,6 +1,10 @@
 numero = int(input('Digite um numero Inteiro: '))
-
-if numero % 1 == numero and numero % numero == 1:
-    print('O Número {} é um Número primo'.format(numero))
+primo = 0
+for i in range(1, numero + 1):
+    if numero % i == 0:
+        primo += 1
+print('O Número {} foi divisivel {} vezes'.format(numero, primo))
+if primo == 2:
+    print('Portanto ele É um número PRIMO')
 else:
-    print('O Número {} não é um Número primo'.format(numero))
+    print('Portanto ele NÃO é PRIMO')

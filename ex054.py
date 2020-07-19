@@ -6,10 +6,10 @@ maior = 0
 
 for i in range(0, 7):
     anoNasc = int(input('Digite o ano de Nascimento: '))
-    print(anoAtual - anoNasc)
-    if anoAtual - anoNasc >= 21:
+    idade = anoAtual - anoNasc
+    if idade >= 21:
         maior += 1
     else:
         menor += 1
 
-print('{} pessoa(s) ja atigiram a maioridade de 18 anos é {} ainda irão atingir!'.format(maior, menor))
+print('{} pessoa(s) ja atigiram a maioridade de 21 anos é {} ainda irão atingir!'.format(maior, menor))
