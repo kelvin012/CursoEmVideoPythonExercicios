@@ -1,22 +1,11 @@
-'''numero = 7
-fatorial = 0
-opr = 0
-test = 0
+n = int(input('Digite um número para mostrar seu Fatorial > '))
+c = n
+f = 1
+print('Calculando o Fatorial de {}! => '.format(n), end='')
+while c > 0:
+    print('{}'.format(c), end='')
+    print(' x ' if c > 1 else ' = ', end='')
+    f *= c
+    c -= 1
 
-while numero > 0:
-    # opr = numero * (numero - 1)
-    if test == 0:
-        fatorial = numero * (numero - 1)
-        test = 1
-    else:
-        fatorial = fatorial * (numero - 1)
-    print(fatorial)
-    #opr += fatorial
-
-    #print(opr)
-    numero -= 1
-print('OPR : {}'.format(opr))
-print('\nO Fatorial de {} é igual a > {}'.format(numero, fatorial))
-'''
-
-#nao fiz
+print('{}'.format(f))

@@ -11,7 +11,7 @@ while opcao != 5:
     if control == 0:
         num1 = float(input('Digite um número : '))
         num2 = float(input('Digite outro número : '))
-    control += 1
+        control += 1
     print('=/' * 10)
     opcao = int(input('Escolha uma opção > '))
     print('=/' * 10)
@@ -19,26 +19,27 @@ while opcao != 5:
         print('=-' * 30)
         print('O resultado da Soma dos numeros {} e {} é igual a > {}'.format(num1, num2, num1 + num2))
         print('=-' * 30)
-    if opcao == 2:
+    elif opcao == 2:
         print('=-' * 30)
         print('O resultado da Multiplicação do números {} e {} é igual a > {}'.format(num1, num2, num1 * num2))
         print('=-' * 30)
-    if opcao == 3:
+    elif opcao == 3:
         if num1 > num2:
-            print('=-' * 30)
-            print('O Maior número é o -> {}'.format(num1))
-            print('=-' * 30)
+            maior = num1
         else:
-            print('=-' * 30)
-            print('O Maior número é o -> {}'.format(num2))
-            print('=-' * 30)
-    if opcao == 4:
+            maior = num2
+        print('=-' * 30)
+        print('O Maior número é o -> {}'.format(maior))
+        print('=-' * 30)
+    elif opcao == 4:
         print('=-' * 30)
         num1 = float(input('Digite um número : '))
         num2 = float(input('Digite outro número : '))
         print('=-' * 30)
-    if opcao == 5:
+    elif opcao == 5:
         print('=-' * 30)
         print('Progama sendo encerrado!')
         print('=-' * 30)
+    else:
+        print('Opção Invalida!')
     control += 1

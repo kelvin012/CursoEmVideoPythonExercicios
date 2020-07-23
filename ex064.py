@@ -1,8 +1,6 @@
-num = 0
-soma = 0
-numeros = 0
+num = soma = numeros = 0
 while num != 999:
-    num = int(input('Digite um número: '))
+    num = int(input('Digite um número [999 para sair]: '))
     if num != 999:
         soma += num
         numeros += 1
