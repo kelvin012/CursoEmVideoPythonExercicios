@@ -27,10 +27,4 @@ print('{}{:^48}{}'.format('|', str(c20) + ' nota(s) de R$ 20,00', '|'))
 print('{}{:^48}{}'.format('|', str(c10) + ' nota(s) de R$ 10,00', '|'))
 print('{}{:^48}{}'.format('|', str(c1) + ' nota(s) de R$ 1,00', '|'))
 print('--' * 25)
-
-'''        
-print('{} nota(s) de R$ 50,00'.format(c50))
-print('{} nota(s) de R$ 20,00'.format(c20))
-print('{} nota(s) de R$ 10,00'.format(c10))
-print('{} nota(s) de R$ 1,00'.format(c1))
-'''
+print('Obrigado por usar os nossos serviços :) Volte sempre.')

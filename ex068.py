@@ -6,8 +6,10 @@ print('=-' * 27)
 wins = 0
 while True:
     valor = int(input('Escolha um valor :> '))
-    jogador = str(input('Par ou Ímpar?[ P/I ] ')).upper()
-    pseudo_rng = int(randint(1, 10))
+    jogador = ' '
+    while jogador not in 'PI':
+        jogador = str(input('Par ou Ímpar?[ P/I ] ')).upper().strip()[0]
+    pseudo_rng = int(randint(0, 10))
     soma = pseudo_rng + valor
     if soma % 2 == 0:
         poui = 'Par'
@@ -28,4 +30,4 @@ while True:
         print('Você PERDEU!')
         print('=-' * 27)
         break
-print(f'O JOGO ACABOU! Você ganhou {wins} veze(s)')
+print(f'O JOGO ACABOU! Você ganhou {wins} vez(es)')
