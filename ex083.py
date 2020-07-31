@@ -10,6 +10,6 @@ for caractere in expressao:
             pilha.append(')')
             break
 if len(pilha) == 0:
-    print('Sua expresão está válida!')
+    print('Sua expresão está Correta!')
 else:
-    print('Sua expressão esta errada!')
+    print('Sua expressão esta Errada!')
