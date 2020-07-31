@@ -1,7 +1,6 @@
 numeros = list()
 while True:
-    num = int(input('Digite um número: '))
-    numeros.append(num)
+    numeros.append(int(input('Digite um número: ')))
     pergunta = str(input('Você deseja adicionar mais números? ')).strip().lower()[0]
     if pergunta != 's':
         break

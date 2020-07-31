@@ -4,7 +4,7 @@ impares = list()
 while True:
     num = int(input('Digite um número: '))
     numeros.append(num)
-    pergunta = str(input('Você deseja continuar? ')).strip().lower()[0]
+    pergunta = str(input('Você deseja continuar? [S/N] ')).strip().lower()[0]
     if pergunta != 's':
         break
 for num in numeros:
@@ -12,9 +12,11 @@ for num in numeros:
         pares.append(num)
     else:
         impares.append(num)
+print('--' * 30)
 print('Você digitou os números > ', end='')
 print(*sorted(numeros), sep=', ')
 print('Os números PARES digitados foram ', end='')
 print(*sorted(pares), sep=', ')
 print('Os números IMPARES digitados foram ', end='')
 print(*sorted(impares), sep=', ')
+print('--' * 30)

@@ -1,15 +1,18 @@
 numeros = list()
 for i in range(0, 5):
     num = int(input('Digite um número: '))
-    if not numeros or num > numeros[i - 1]:
+    if not numeros or num > numeros[-1]:
         numeros.append(num)
         print('Adicionado ao final da lista...')
-    elif num < numeros[i - 1] and num < numeros[0]:
-        numeros.insert(0, num)
-        print('Adicionado na posição 0 da lista...')
     else:
-        numeros.insert(1, num)
-        print('Adicionado na posição 1 da lista...')
+        pos = 0
+        while pos < len(numeros):
+            if num <= numeros[pos]:
+                numeros.insert(pos, num)
+                print(f'Adicionado na posição {pos} da lista...')
+                break
+            pos += 1
 print('--' * 20)
 print('Os Números ordenados foram > ', end='')
 print(*numeros, sep=', ')
+print('--' * 20)
