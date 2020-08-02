@@ -5,6 +5,7 @@ for i in range(0, 7):
         numeros[0].append(num)
     else:
         numeros[1].append(num)
+print('--' * 40)
 print('A Sub Lista com os números PARES e igual a > ', end='')
 print(*sorted(numeros[0]), sep=', ')
 print('A Sub Lista com os números ÍMPARES e igual a > ', end='')

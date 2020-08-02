@@ -21,7 +21,7 @@ for i in range(0, 3):
 print('-=' * 17)
 for linha in matriz:
     for elemento in linha:
-        print('[ {} ]'.format(elemento), end='')
+        print('[ {:^5} ]'.format(elemento), end='')
     print()
 print('-=' * 17)
 print(f'A soma dos valores pares é {soma_par}.')

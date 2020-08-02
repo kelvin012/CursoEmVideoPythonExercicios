@@ -17,10 +17,10 @@ while True:
     if pergunta != 's':
         break
 print('-=' * 25)
-print('No. NOME           MÉDIA')
+print(f'{"No.":<4} {"NOME":<10}{"MÉDIA":>8}')
 print('--' * 15)
 for i in range(0, len(alunos)):
-    print(f'{i}   {alunos[i][0]:<15} {alunos[i][2]:.1f}')
+    print(f'{i:<4}{alunos[i][0]:<10} {alunos[i][2]:>8.1f}')
 print('--' * 15)
 while True:
     pergunta = int(input('Mostrar Notas de qual aluno? [999 to EXIT] '))

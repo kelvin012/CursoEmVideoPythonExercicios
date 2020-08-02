@@ -4,20 +4,19 @@ maior = menor = total = 0
 while True:
     dados.append(str(input('Nome: ')))
     dados.append(float(input('Peso: ')))
+    if len(pessoas) == 0:
+        maior = menor = dados[1]
+    else:
+        if dados[1] > maior:
+            maior = dados[1]
+        if dados[1] < menor:
+            menor = dados[1]
     pessoas.append(dados[:])
     dados.clear()
     total += 1
     pergunta = str(input('Quer continuar? ')).strip().lower()[0]
     if pergunta != 's':
         break
-for i in range(0, len(pessoas)):
-    if i == 0:
-        maior = menor = pessoas[i][1]
-    else:
-        if pessoas[i][1] > maior:
-            maior = pessoas[i][1]
-        if pessoas[i][1] < menor:
-            menor = pessoas[i][1]
 print('--' * 20)
 print(f'Você cadastrou {total} Pessoas no total.')
 print(f'O Maior peso foi de {maior:.1f}Kg. Peso de ', end='')
