@@ -24,7 +24,7 @@ for i in range(0, len(jogadores)):
     print(f'{i:>3} {jogadores[i]["nome"]:<10}{jogadores[i]["gols"]}{jogadores[i]["total"]:>7}')
 while True:
     print('--' * 20)
-    r = int(input('Mostrar dados de qual jogador? '))
+    r = int(input('Mostrar dados de qual jogador? [999 para parar!]'))
     if r == 999:
         break
     elif 0 <= r <= len(jogadores):

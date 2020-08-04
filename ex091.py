@@ -5,7 +5,7 @@ jogadores = dict()
 for i in range(1, 5):
     jogadores['jogador' + str(i)] = randint(1, 6)
 for k, v in jogadores.items():
-    print(f'O {k} tirou {v}')
+    print(f'O {k} tirou {v} no dado.')
     sleep(0.6)
 print('Ranking dos jogadores:')
 count = 1
