@@ -3,9 +3,9 @@ from time import sleep
 
 
 def sorteia(lista):
-    print('Sorteando 5 valores dda lista: ', end='')
+    print('Sorteando 5 valores da lista: ', end='')
     for i in range(0, 5):
-        pseudo_rng = randint(1, 100)
+        pseudo_rng = randint(1, 10)
         print(f'{pseudo_rng} ', end='')
         lista.append(pseudo_rng)
         sleep(0.3)

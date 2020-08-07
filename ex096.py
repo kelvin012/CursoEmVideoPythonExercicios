@@ -1,6 +1,6 @@
 def area(lar, com):
     out = lar * com
-    print(f'A área dde um terreno {lar:.1f}x{com:.1f} é de {out}m².')
+    print(f'A área de um terreno {lar:.1f}x{com:.1f} é de {out}m².')
 
 
 print('Medidor de Terrenos!')
