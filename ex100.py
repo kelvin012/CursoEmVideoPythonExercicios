@@ -6,7 +6,7 @@ def sorteia(lista):
     print('Sorteando 5 valores da lista: ', end='')
     for i in range(0, 5):
         pseudo_rng = randint(1, 10)
-        print(f'{pseudo_rng} ', end='')
+        print(f'{pseudo_rng} ', end='',flush=True)
         lista.append(pseudo_rng)
         sleep(0.3)
     print('PRONTO!')
