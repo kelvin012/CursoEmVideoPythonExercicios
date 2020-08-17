@@ -1,7 +1,7 @@
 def leiaint(msg):
     while True:
-        n = input(msg)
-        if str(n).isnumeric():
+        n = str(input(msg))
+        if n.isnumeric():
             break
         else:
             print('Error digite um número inteiro!')
@@ -9,5 +9,5 @@ def leiaint(msg):
 
 
 print('--' * 15)
-num = leiaint('Digite um número: ')
+num = int(leiaint('Digite um número: '))
 print(f'voccê acabou de digitar o número {num}')

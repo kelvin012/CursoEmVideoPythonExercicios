@@ -2,14 +2,13 @@ from datetime import date
 
 
 def voto(age):
-    voto = ''
-    if 18 <= age <= 70:
-        voto = 'OBRIGATÓRIO'
+    if 18 <= age < 70:
+        v = 'VOTO OBRIGATÓRIO'
     elif age < 16:
-        voto = 'NEGADO'
+        v = 'VOTO NEGADO'
     else:
-        voto = 'VOTO OPCIONAL'
-    return voto
+        v = 'VOTO OPCIONAL'
+    return v
 
 
 print('--' * 15)

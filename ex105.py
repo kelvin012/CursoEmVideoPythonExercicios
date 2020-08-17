@@ -23,7 +23,7 @@ def notas(*grades, sit=False):
     turma['menor'] = menor
     turma['média'] = somatorio / turma['total']
     if sit:
-        if turma['média'] > 7:
+        if turma['média'] >= 7:
             turma['situação'] = 'BOA'
         elif 7 > turma['média'] >= 6:
             turma['situação'] = 'RAZOÁVEL'

@@ -13,7 +13,6 @@ def fatorial(n=1, show=False):
                 print(f'{c} x ', end='')
             else:
                 print(f'{c}', end='')
-
             if c == 1:
                 print(f' = {f}')
         f *= c
@@ -25,3 +24,4 @@ def fatorial(n=1, show=False):
 
 print('--' * 15)
 print(fatorial(5, True))
+# help(fatorial)
